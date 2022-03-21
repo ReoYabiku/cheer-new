@@ -1,30 +1,62 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <body>
+    <header>
+      <div class="container">
+          <div class="header-title">応援サイト</div>
+      </div>
+      <div class="clear"></div>
+    </header>
+
+    <router-view/>
+
+    <footer>
+        <div class="container">
+            <div class="footer-title">
+                <h1>フィーバータイム第一週</h1>
+            </div>
+        </div>
+    </footer>
+  </body>
 </template>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+body{
+  margin: 0;
+  padding: 0;
+  font-family: "Hiragino Kaku Gothic ProN";
+  background-color: bisque;
 }
 
-nav {
-  padding: 30px;
+.container{
+    padding: 0 30px;
 }
 
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
+.clear{
+    clear: left;
 }
 
-nav a.router-link-exact-active {
-  color: #42b983;
+/*ヘッダの情報*/
+
+header{
+    font-size: 20px;
+    background-color: rgb(110, 156, 224);
+    padding: 0;
+    height: 50px;
+}
+
+.header-title{
+    float: left;
+    padding: 10px 0;
+}
+
+/*フッタの情報*/
+
+footer{
+    background-color: rgb(110, 156, 224);
+}
+
+.footer-title h1{
+    margin: 0;
+    padding: 40px 0;
 }
 </style>
