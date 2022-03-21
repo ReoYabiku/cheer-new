@@ -12,18 +12,12 @@
     <footer>
         <div class="container">
             <div class="footer-title">
-                <h1>フィーバータイム第一週</h1>
+                <h1>フィーバータイム第四週</h1>
             </div>
         </div>
     </footer>
   </body>
 </template>
-
-<script>
-export default {
-  
-}
-</script>
 
 <style>
 body{

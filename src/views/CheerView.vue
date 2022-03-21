@@ -1,16 +1,15 @@
 <template>
-  <div class="container">
-      <div class="explanation">
-          <h1>あなただけのための応援メッセージを生成します</h1>
-          <p>当サイト製作者にはセキュリティの知識が一切ございません。</p>
-          <p>決して個人情報を入力しないでください。</p>
-      </div>
-      <div class="input-name">
-          <p>「{{this.$route.params['name']}}」でよろしいですか？</p>
-          <router-link to="/" class="btn rewrite">やり直す</router-link>
-          <router-link v-bind:to="'/cheer/' + this.$route.params['name']" class="btn ok">オッケー</router-link>
-      </div>
-  </div>
+    <div class="container">
+        <h1 class="message">
+            {{this.$route.params['name']}}なら大丈夫！！
+        </h1>
+        <h1 class="message">
+            自分を信じて突き進め！！
+        </h1>
+        <h1 class="message">
+            頑張れ！！！{{this.$route.params['name']}}！！！
+        </h1>
+    </div>
 </template>
 
 <style scoped>
